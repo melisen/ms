@@ -1,0 +1,32 @@
+.box{
+    min-height:75vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.divFormulario{
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.divTexfields{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+.divMensaje{
+    width:100%;
+    padding:10px;
+
+
+}
+.divEnviar{
+    justify-content:center;
+    align-items: center;
+    padding:10px;
+}

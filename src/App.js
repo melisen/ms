@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+import Productos from './Components/Productos/Productos';
+import Servicios from './Components/Servicios/Servicios';
+import Contacto from './Components/Contacto/Contacto';
+import ServDetailContainer from './Components/Servicios/ServDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import ProdDetailContainer from './Components/Productos/ProdDetailContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <>
+    
+      <Navbar />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/category/Productos' element={<Productos />} />
+        <Route path='/category/Servicios' element={<Servicios />} />
+        <Route path='/category/Contacto' element={<Contacto />} />
+        <Route path='/serv/:ServId' element={<ServDetailContainer />} />
+        <Route path='/prod/:ProdId' element={<ProdDetailContainer />} />
+      </Routes>
+
+      <Footer />
+      
+    </>
+    </BrowserRouter>
   );
 }
 

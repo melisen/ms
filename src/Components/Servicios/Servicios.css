@@ -1,0 +1,15 @@
+.serviciosList{
+    margin: 1rem 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 3%;
+}
+.descriptionCard{
+    background-color:#263850;
+    color:white;
+}
+.boxServicio{
+    min-height:75vh;
+}
