@@ -7,9 +7,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Productos.css'
 import {Link} from 'react-router-dom'
+import Slide from '@mui/material/Slide';
 
 export default function Producto({id, title, picture, condition, description }) {
 return (
+    <Slide direction="up" in={true} mountOnEnter unmountOnExit
+    style={{ transformOrigin: '0 0 0' }}
+          {...( { timeout: 500 } )}>
         <Card sx={{ maxWidth: 300}} >
         <CardMedia
             component="img"
@@ -38,5 +42,6 @@ return (
             </Button>
         </CardActions>
         </Card>
-    )
+    </Slide>
+)
 }

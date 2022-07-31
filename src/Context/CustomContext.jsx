@@ -17,7 +17,7 @@ export default function CustomContext({children}) {
     const [english, setEnglish] = useState(false);
 
     function switchToEnglish(){
-        setEnglish(!english);
+        setEnglish((english) => !english);
     }
 
 
