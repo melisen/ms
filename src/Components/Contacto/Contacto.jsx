@@ -11,7 +11,7 @@ export default function Contacto() {
     <>
     <Box className='boxServicio'>
             <Container  maxWidth='lg'>
-              <Typography variant='h2' fontWeight={900} my={3} color='primary.dark' textAlign='center'> Contacto </Typography>
+              <Typography variant='h2' fontWeight={500} my={3} color='primary.dark' textAlign='center'> Contacto </Typography>
             </Container>
             <Container  maxWidth='lg'   sx={{backgroundImage:'linear-gradient(120deg, #98C1D9 1%, #263850 15%, #263850 85%, #98C1D9) ', margin:'0'}}>
                <Box py={{xs:5, sm:4, lg:4}} sx={{display:'flex', flexDirection:'column', alignItems:'center'}} >
