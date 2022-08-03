@@ -35,7 +35,7 @@ export default function MenuItemsLG( {items}, handleCloseNavMenu) {
                     >
                     <div style={{display:'flex', flexDirection:'row', alignItems:'center'}} >
                     {items.title}
-                    <ArrowDropDownIcon />
+                    <ArrowDropDownIcon/>
                     </div>
                 </Button>
                 
