@@ -10,7 +10,7 @@ export default function Contacto() {
   return (
     <>
     <Box className='boxServicio'>
-            <Container  maxWidth='lg'>
+            <Container  maxWidth='lg' px={0} sx={{alignItems:'center', justifyContent:'center' }}>
               <Typography variant='h2' fontWeight={500} my={3} color='primary.dark' textAlign='center'> Contacto </Typography>
             </Container>
             <Container  maxWidth='lg'   sx={{backgroundImage:'linear-gradient(120deg, #98C1D9 1%, #263850 15%, #263850 85%, #98C1D9) ', margin:'0'}}>
