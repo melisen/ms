@@ -23,7 +23,7 @@ export default function Contacto() {
                       sx={{padding:'0 20px', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-evenly' }}>
                         
                           <MailOutlineIcon color='info' />
-                          <Typography variant='body1' fontSize={18} my={3} color='info.main' textAlign='center'> miguel.senorans@gmail.com </Typography>
+                          <Typography variant='body1' fontSize={18} my={3} color='info.main' textAlign='center'> msenoransperez@gmail.com </Typography>
                         
                       </Paper>
                  
