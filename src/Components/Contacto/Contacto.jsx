@@ -13,8 +13,8 @@ export default function Contacto() {
             <Container  maxWidth='lg'  sx={{alignItems:'center', justifyContent:'center', padding:'0' }}>
               <Typography variant='h2' fontWeight={500} my={3} color='primary.dark' textAlign='center'> Contacto </Typography>
             </Container>
-            <Container  maxWidth='lg'   sx={{backgroundImage:'linear-gradient(120deg, #98C1D9 1%, #263850 15%, #263850 85%, #98C1D9) ', margin:'0 0'}}>
-               <Box py={{xs:5, sm:4, lg:4}} sx={{display:'flex', flexDirection:'column', alignItems:'center'}} >
+            <Container  maxWidth='lg'   sx={{backgroundImage:'linear-gradient(120deg, #98C1D9 1%, #263850 15%, #263850 85%, #98C1D9) ', margin:'0'}}>
+               <Box py={{xs:5, sm:4, lg:4}} sx={{display:'flex', flexDirection:'column', alignItems:'center', margin:'0'}} >
                     <Typography variant='body2' fontSize={18} mb={3} color='secondary.main' textAlign='center'>
                        Para consultas técnicas por favor enviar un correo especificando asunto a:
                        </Typography>
