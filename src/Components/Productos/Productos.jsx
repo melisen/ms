@@ -11,6 +11,9 @@ export default function Productos() {
 
   return (
     <>
+    <div>
+      Equipamientos usados
+    </div>
      <div className="productosList">
     {
           arrProductos.map((item)=>

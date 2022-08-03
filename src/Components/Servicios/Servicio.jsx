@@ -17,7 +17,7 @@ export default function Servicio({id, title, description, picture}) {
     style={{ transformOrigin: '0 0 0' }}
           {...( { timeout: 1000 } )}>
     
-      <Card sx={{ width: 380, maxHeight:350, marginBottom:'20px' }}>
+      <Card sx={{ width: 300, maxHeight:350, marginBottom:'20px' }}>
         <CardMedia
           component="img"
           alt={title}

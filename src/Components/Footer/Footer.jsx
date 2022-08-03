@@ -12,8 +12,9 @@ export default function Footer () {
     <>
         <Box 
         className='footerEstilos'
-        px={{xs:3, sm:10, lg:0}} 
-        py={{xs:5, sm:10, lg:0.5}} 
+        mt={{xs:1, sm:2, lg:2}} 
+        px={{xs:3, sm:0, lg:0}} 
+        py={{xs:5, sm:0.5, lg:0.5}} 
         style={{position:'relative', left:'0', bottom:'0', right:'0'}}
         >
             <Container maxWidth='lg' >
@@ -34,7 +35,7 @@ export default function Footer () {
                         
                     </Grid>
                 </Grid>
-                <Box textAlign='center' pt={{xs:5, sm:10, lg:0}} pb={{xs:5, sm:0, lg:0}} color='#98C1D9'>
+                <Box textAlign='center' pt={{xs:5, sm:0, lg:0}} pb={{xs:5, sm:0, lg:0}} color='#98C1D9'>
                 MS Miguel Señoráns &reg; {new Date().getFullYear()}
                 </Box>
             </Container>

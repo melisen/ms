@@ -13,3 +13,6 @@
 .boxServicio{
     min-height:75vh;
 }
+.pieza{
+    max-width:450px;
+}

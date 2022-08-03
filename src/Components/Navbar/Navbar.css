@@ -5,3 +5,7 @@ color:#d65a3a
     max-height:4rem;
     margin-right:15px;
 }
+.dropdown {
+
+display: none;
+   }

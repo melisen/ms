@@ -32,11 +32,15 @@ const themeMS = createTheme({
     },
     h2:{
       fontWeight: '900',
-      fontSize:"2rem",
+      fontSize:"2.2rem",
     },
     h3:{
       fontSize:"2rem",
       fontWeight: '700',
+    },
+    h4:{
+      fontSize:"1.8rem",
+      fontWeight: '500',
     },
     h5:{
       fontSize:"1.2rem",

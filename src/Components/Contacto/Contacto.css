@@ -30,3 +30,6 @@
     align-items: center;
     padding:10px;
 }
+.boxServicio{
+    min-height:75vh;
+}

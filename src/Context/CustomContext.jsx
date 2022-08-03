@@ -2,7 +2,7 @@ import React from 'react'
 import { createContext,  useState } from 'react';
 import imgDisenio from "../Images/2-dis3d.jpg";
 import imgPuesta from "../Images/puesta-portada.jpg";
-import imgAuto from "../Images/2-dis3d.jpg";
+import imgAuto from "../Images/auto-portada.jpg";
 import imgParam from "../Images/parametrizacion.jpg";
 import imgCapac from "../Images/certificado.jpg";
 import imgRetrof from "../Images/retrofit-portada.png";
@@ -19,6 +19,45 @@ export default function CustomContext({children}) {
     function switchToEnglish(){
         setEnglish((english) => !english);
     }
+
+
+    const menuItems = [
+      {
+       title:'Servicios',
+       submenu: [
+        {
+          id:"1",
+          title: "Diseño"
+        },
+        {
+          id:"2",
+          title: "Puesta en marcha",
+        },
+        {
+          id:"3",
+          title: "Automatizaciones"
+        },
+        {
+          id:"4",
+          title: "Parametrización"
+        },
+        {
+          id:"5",
+          title: "Capacitación"
+        },
+        {
+          id:"6",
+          title: "Retrofitting",
+        },
+       ]
+      },
+      {
+       title: 'Productos'
+      },
+      {
+       title: 'Contacto'
+      }
+     ];
 
 
     const arrServicios = [
@@ -38,7 +77,7 @@ export default function CustomContext({children}) {
           id:"3",
           title: "Automatizaciones",
           picture: imgAuto,
-          description: "Descripción card Automatizaciones"
+          description: "Diseñamos sus procesos más rápidos y eficientes, con reducción de costos. Sistemas de soldadura robotizados."
       },
       {
           id:"4",
@@ -50,7 +89,7 @@ export default function CustomContext({children}) {
           id:"5",
           title: "Capacitación",
           picture: imgCapac,
-          description: "Orientada a la necesidad del cliente: implementar programas y proyectos de mejora, y evaluar rápidamente los problemas diarios.  "
+          description: "La capacitación del personal incorpora las competencias fundamentales para implementar programas y proyectos de mejora.  "
       },
       {
           id:"6",
@@ -80,7 +119,7 @@ export default function CustomContext({children}) {
 
   return (
     <>
-    <MyContext.Provider value={{ english, setEnglish, switchToEnglish, arrServicios, arrProductos}}>
+    <MyContext.Provider value={{ english, setEnglish, switchToEnglish, arrServicios, arrProductos, menuItems}}>
                 {children}
     </MyContext.Provider>
     </>
